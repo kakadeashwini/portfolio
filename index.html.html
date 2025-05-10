@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Portfolio</title>
+    <link rel="stylesheet" href="java.css">
+    <body>
+    <nav>
+        <div><a href="#">Ashwini</a></div>
+        <div>
+            <a onclick="showContent('about')">About</a>
+            <a onclick="showContent('services')">Services</a>
+            <a onclick="showContent('portfolio')">Portfolio</a>
+            <a onclick="showContent('contact')">Contact</a>
+        </div>
+    </nav>
+    
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Hi, I'm <span>Ashwini Kakade</span></h1>
+            <p>From Ahilyanagar, Maharashtra</p>
+        </div>
+        <img src="a.png" alt="Profile Picture" class="profile-img">
+    </section>
+
+    <div id="about" class="content-section">
+        <h2>About Me</h2>
+        <p>I'm Ashwini,I am complete graduation of BCA, I have good Command On HTML,CSS,JAVA-SCRIPT.A fresh-faced computer science student, aspires to navigate the complexities 
+            of the digital world with unwavering curiosity and a thirst for knowledge.
+            I am writing to express my interest in the Java Developer position at Our Company. I am currently in the final year of my computer science program with a strong foundation in:</p>
+    </div>
+
+    <div id="services" class="content-section">
+        <h2>Services</h2>
+        <p>I offer web development, UI/UX design, and consulting services.</p>
+    </div>
+
+    <div id="portfolio" class="content-section">
+        <h2>My Work</h2>
+        
+        <p>This Is My First Project...!!!</p>
+    </div>
+
+    <div id="contact" class="content-section">
+        <h2>Contact Me</h2>
+        <input type="text" placeholder="Your Name" required><br>
+        <input type="email" placeholder="Your Email" required><br>
+        <textarea placeholder="Your Message"></textarea><br>
+        <button type="submit">Send Message</button>
+    </div>
+
+    <script>
+        function showContent(sectionId) {
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
